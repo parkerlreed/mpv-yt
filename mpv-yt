@@ -9,4 +9,4 @@ play() {
 	get_videos | select_video
 }
 videoid=`play | sed -e 's/^"//'  -e 's/"$//'`
-mpv --fs https://www.youtube.com/watch?v=$videoid
+mpv --fs "https://www.youtube.com/watch?v=$videoid"
